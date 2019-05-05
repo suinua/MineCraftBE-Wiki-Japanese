@@ -1,6 +1,6 @@
 # has_ability  
-Returns true when the subject entity has the named ability.
-  
+エンティティ、オブジェクトが特定の状態(アビリティ)を持つ場合trueを返します。
+
 # パラメーター
 
 <dl><dd><table class="wikitable">
@@ -120,59 +120,70 @@ Returns true when the subject entity has the named ability.
 </td>
 <td>
 </td>
-<td>(Required) The Ability type to test
+<td>状態名(アビリティ名)(必須)
 <dl><dd><table class="wikitable">
 <tbody><tr>
-<th>Options</th>
+<th>オプション</th>
 <th>説明
 </th></tr>
 <tr>
-<td>worldbuilder
+<td>worldbuilder<br>
+EducationEditionのallowブロックとdenyブロックを、
+設置できる状態(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>invulnerable
+<td>invulnerable<br>
+(無敵(要検証)<sup><a href="#1">1</a></sup>)
 </td>
 <td>
 </td></tr>
 <tr>
-<td>flying
+<td>flying<br>
+(飛行(要検証)<sup><a href="#1">1</a></sup>)
 </td>
 <td>
 </td></tr>
 <tr>
-<td>instabuild
+<td>instabuild<br>
+</td>
+(不明(要検証)<sup><a href="#1">1</a></sup>)
+<td>
+</td></tr>
+<tr>
+<td>flySpeed<br>
+(飛行速度(要検証)<sup><a href="#1">1</a></sup>)
 </td>
 <td>
 </td></tr>
 <tr>
-<td>flySpeed
+<td>lightning<br>
+(帯電(要検証)<sup><a href="#1">1</a></sup>)
 </td>
 <td>
 </td></tr>
 <tr>
-<td>lightning
+<td>walkSpeed<br>
+(移動速度(要検証)<sup><a href="#1">1</a></sup>)
 </td>
 <td>
 </td></tr>
 <tr>
-<td>walkSpeed
+<td>noclip<br>
+(スペクテイター(要検証)<sup><a href="#1">1</a></sup>)
 </td>
 <td>
 </td></tr>
 <tr>
-<td>noclip
+<td>mayfly<br>
+(クリエイティブ飛行(要検証)<sup><a href="#1">1</a></sup>)
 </td>
 <td>
 </td></tr>
 <tr>
-<td>mayfly
-</td>
-<td>
-</td></tr>
-<tr>
-<td>mute
+<td>mute<br>
+(チャットがミュート(要検証)<sup><a href="#1">1</a></sup>)
 </td>
 <td>
 </td></tr></tbody></table></dd></dl>
@@ -183,9 +194,11 @@ Returns true when the subject entity has the named ability.
 ```json
 { "test": "has_ability", "subject": "self", "operator": "equals", "value": "instabuild" }
 ```
-これは、TODO際にtrueを返すフィルタです。  
+これは、エンティティ、オブジェクトがinstabuild状態な際にtrueを返すフィルタです。  
 デフォルト値を使うことで、省略して記述できます。  
 ```json
 { "test": "has_ability", "value": "instabuild" }
 ```  
 [翻訳元](https://minecraft.gamepedia.com/Bedrock_Edition_entity_components_documentation#has_ability)  
+
+<span id="1" style="font-size:x-small">1: 原文にこの記述はありません。</span>
