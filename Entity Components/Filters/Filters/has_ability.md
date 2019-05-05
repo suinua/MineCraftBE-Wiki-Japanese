@@ -1,5 +1,5 @@
 # has_ability  
-エンティティ、オブジェクトが特定の状態(アビリティ)を持つ場合trueを返します。
+エンティティ、オブジェクトが指定されたアビリティを持つ場合trueを返します。
 
 # パラメーター
 
@@ -120,7 +120,7 @@
 </td>
 <td>
 </td>
-<td>状態名(アビリティ名)(必須)
+<td>アビリティ名(必須)
 <dl><dd><table class="wikitable">
 <tbody><tr>
 <th>オプション</th>
@@ -194,7 +194,7 @@ EducationEditionのallowブロックとdenyブロックを、
 ```json
 { "test": "has_ability", "subject": "self", "operator": "equals", "value": "instabuild" }
 ```
-これは、エンティティ、オブジェクトがinstabuild状態な際にtrueを返すフィルタです。  
+これは、エンティティ、オブジェクトがinstabuildを持つ際にtrueを返すフィルタです。  
 デフォルト値を使うことで、省略して記述できます。  
 ```json
 { "test": "has_ability", "value": "instabuild" }
