@@ -1,6 +1,6 @@
 # has_damage  
-Returns true when the subject entity receives the named damage type.
-  
+テストの対象が、指定されたダメージを受けた時trueを返します。
+
 # パラメーター
 
 <dl><dd><table class="wikitable">
@@ -120,129 +120,153 @@ Returns true when the subject entity receives the named damage type.
 </td>
 <td>
 </td>
-<td>(Required) The Damage type to test
+<td>ダメージタイプ(必須)
 <dl><dd><table class="wikitable">
 <tbody><tr>
-<th>Options</th>
+<th>オプション</th>
 <th>説明
 </th></tr>
 <tr>
-<td>contact
+<td>contact<br>
+不明(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>none
+<td>none<br>
+不明(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>lava
+<td>lava<br>
+マグマによるダメージ(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>attack
+<td>attack<br>
+攻撃によるダメージ<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>override
+<td>override<br>
+不明(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>projectile
+<td>projectile<br>
+投射物(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>suffocation
+<td>suffocation<br>
+窒息ダメージ(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>fall
+<td>fall<br>
+落下ダメージ(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>starve
+<td>starve<br>
+空腹ダメージ(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>fire
+<td>fire<br>
+火炎ダメージ(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>fatal
+<td>fatal<br>
+死亡(要検証)<sup><a href="#1">1</a></sup>
 </td>
-<td>Any damage which kills the subject
+<td>テストの対象を倒すダメージ全て
 </td></tr>
 <tr>
-<td>fire_tick
-</td>
-<td>
-</td></tr>
-<tr>
-<td>drowning
+<td>fire_tick<br>
+不明(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>block_explosion
+<td>drowning<br>
+酸素不足によるダメージ(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>entity_explosion
+<td>block_explosion<br>
+ブロック爆破ダメージ(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>void
+<td>entity_explosion<br>
+エンティティ爆破ダメージ(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>suicide
+<td>void<br>
+不明(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>magic
+<td>suicide<br>
+自殺(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>wither
+<td>magic<br>
+魔法によるダメージ(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>anvil
+<td>wither<br>
+ウィザー(状態？)によるダメージ(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>thorns
+<td>anvil<br>
+不明(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>falling_block
+<td>thorns<br>
+とげ(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>piston
+<td>falling_block<br>
+落下ブロックによるダメージ(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
-<td>fly_into_wall
+<td>piston<br>
+ピストンによるダメージ(要検証)<sup><a href="#1">1</a></sup>
+</td>
+<td>
+</td></tr>
+<tr>
+<td>fly_into_wall<br>
+壁に衝突した際のダメージ(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr></tbody></table></dd></dl>
@@ -253,9 +277,11 @@ Returns true when the subject entity receives the named damage type.
 ```json
 { "test": "has_damage", "subject": "self", "operator": "equals", "value": "fatal" }
 ```
-これは、TODO際にtrueを返すフィルタです。  
+これは、self(テストを呼び出したエンティティ、オブジェクト)が死亡するダメージを受けた際にtrueを返すフィルタです。  
 デフォルト値を使うことで、省略して記述できます。  
 ```json
 { "test": "has_damage", "value": "fatal" }
 ```  
 [翻訳元](https://minecraft.gamepedia.com/Bedrock_Edition_entity_components_documentation#has_damage)  
+
+<span id="1" style="font-size:x-small">1: 原文にこの記述はありません。</span>
