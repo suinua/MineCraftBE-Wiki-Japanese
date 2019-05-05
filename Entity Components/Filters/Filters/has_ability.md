@@ -135,55 +135,55 @@ EducationEditionのallowブロックとdenyブロックを、
 </td></tr>
 <tr>
 <td>invulnerable<br>
-(無敵(要検証)<sup><a href="#1">1</a></sup>)
+無敵(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
 <td>flying<br>
-(飛行(要検証)<sup><a href="#1">1</a></sup>)
+飛行(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
 <td>instabuild<br>
 </td>
-(不明(要検証)<sup><a href="#1">1</a></sup>)
+不明(要検証)<sup><a href="#1">1</a></sup>
 <td>
 </td></tr>
 <tr>
 <td>flySpeed<br>
-(飛行速度(要検証)<sup><a href="#1">1</a></sup>)
+飛行速度(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
 <td>lightning<br>
-(帯電(要検証)<sup><a href="#1">1</a></sup>)
+帯電(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
 <td>walkSpeed<br>
-(移動速度(要検証)<sup><a href="#1">1</a></sup>)
+移動速度(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
 <td>noclip<br>
-(スペクテイター(要検証)<sup><a href="#1">1</a></sup>)
+スペクテイター(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
 <td>mayfly<br>
-(クリエイティブ飛行(要検証)<sup><a href="#1">1</a></sup>)
+クリエイティブ飛行(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr>
 <tr>
 <td>mute<br>
-(チャットがミュート(要検証)<sup><a href="#1">1</a></sup>)
+チャットがミュート(要検証)<sup><a href="#1">1</a></sup>
 </td>
 <td>
 </td></tr></tbody></table></dd></dl>
